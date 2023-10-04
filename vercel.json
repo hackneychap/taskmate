@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "tasktmate/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "tasktmate/wsgi.py"
+      }
+    ]
+}
