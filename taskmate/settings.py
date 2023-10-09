@@ -29,7 +29,11 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DJANGO_DEBUG")
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ["*"]
+=======
+ALLOWED_HOSTS = ["'127.0.0.1', '.vercel.app'"]
+>>>>>>> 94caa43a33848ead1ff7cdef9f10d575db3155b4
 
 
 # Application definition
@@ -136,7 +140,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+<<<<<<< HEAD
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+=======
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles",'staticfiles_build',"static")
+>>>>>>> 94caa43a33848ead1ff7cdef9f10d575db3155b4
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 LOGIN_REDIRECT_URL = "todolist"
