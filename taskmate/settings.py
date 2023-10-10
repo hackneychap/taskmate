@@ -30,7 +30,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env("DJANGO_DEBUG")
 
 ALLOWED_HOSTS = ["localhost","127.0.0.1","taskmate-production-de0b.up.railway.app"]
-CSRF_TRUSTED_ORIGINS = ['taskmate-production-de0b.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://taskmate-production-de0b.up.railway.app']
 
 
 # Application definition
